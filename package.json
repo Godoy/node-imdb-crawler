@@ -1,0 +1,31 @@
+{
+  "name": "node-imdb-crawler",
+  "version": "0.0.1",
+  "description": "A node library to crawler imdb and parse to json",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --reporter spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Godoy/node-imdb-crawler.git"
+  },
+  "keywords": [
+    "node",
+    "crawler",
+    "imdb"
+  ],
+  "author": "Adriano Godoy <godoy.ccp@gmail.com> (http://godoy.net.br)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Godoy/node-imdb-crawler/issues"
+  },
+  "homepage": "https://github.com/Godoy/node-imdb-crawler#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0"
+  },
+  "dependencies": {
+    "crawler": "^1.0.3"
+  }
+}
