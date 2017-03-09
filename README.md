@@ -3,8 +3,15 @@
 
 ## Example
 ```
-var imdb_crawler = require('node-imdb-crawler');
-var series_got = imdb_crawler.getTitleByImdbId("tt0944947")
+const CrawlerImdb = require('node-imdb-crawler');
+
+let imdb_code = "tt0944947";
+let imdb_crawler = new CrawlerImdb(imdb_code);
+
+imdb_crawler.get_basic(function(data) {
+  console.log("Serie:");
+  console.log(data);
+});
 ```
 
 ## Run test
