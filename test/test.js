@@ -17,7 +17,6 @@ describe('#get_basic', function() {
     });
   });
 
-  // describe('#name')
   it('should get title name', function() {
     expect(title.name).to.equal('Game of Thrones');
   });
@@ -26,6 +25,9 @@ describe('#get_basic', function() {
     expect(title.rating).to.equal(9.5);
   });
 
-
+  it('should get image', function() {
+    expect(title.image).to.have.string('http');
+    expect(title.image).to.match(/.(jpg|jpeg|png|gif)$/i)
+  });
 
 });
