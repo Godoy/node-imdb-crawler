@@ -10,7 +10,7 @@ describe('#get_basic', function() {
   this.timeout(10000);
   let title = null;
 
-  beforeEach(function(done){
+  before(function(done){
     imdb_crawler.get_basic(function(data) {
       title = data;
       done();
@@ -30,4 +30,7 @@ describe('#get_basic', function() {
     expect(title.image).to.match(/.(jpg|jpeg|png|gif)$/i)
   });
 
+  it('should get genres', function() {
+    expect(title.genres).to.eql(['Adventure', 'Drama', 'Fantasy', 'Romance'])
+  });
 });
