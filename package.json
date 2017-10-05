@@ -16,7 +16,7 @@
     "imdb"
   ],
   "author": "Adriano Godoy <godoy.ccp@gmail.com> (http://godoy.net.br)",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/Godoy/node-imdb-crawler/issues"
   },

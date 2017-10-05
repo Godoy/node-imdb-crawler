@@ -3,6 +3,8 @@
 [![Code Climate](https://codeclimate.com/github/Godoy/node-imdb-crawler/badges/gpa.svg)](https://codeclimate.com/github/Godoy/node-imdb-crawler)
 [![Test Coverage](https://codeclimate.com/github/Godoy/node-imdb-crawler/badges/coverage.svg)](https://codeclimate.com/github/Godoy/node-imdb-crawler/coverage)
 [![Issue Count](https://codeclimate.com/github/Godoy/node-imdb-crawler/badges/issue_count.svg)](https://codeclimate.com/github/Godoy/node-imdb-crawler)
+=======
+A node library to gets TV Shows info from IMDB and returns collected data as a json.
 
 ## Example
 
@@ -18,14 +20,24 @@ imdb_crawler.get_basic(function(data) {
 });
 ```
 
-## Run test
-
-```sh
-npm test
-```
-
-## Run example
+## Running above example:
 
 ```sh
 node example/example.js
+```
+
+
+# Contributing
+
+Pull Requests are always welcome.
+
+Ensure that before sending a PR:
+
+You have tested the changes locally and they are functional.
+Include the relevant issue number, if applicable.
+
+## Running tests
+
+```sh
+npm test
 ```
