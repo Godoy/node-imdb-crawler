@@ -1,5 +1,5 @@
 # node-imdb-crawler
-
+ [![Code Climate](https://codeclimate.com/github/tashrafy/node-imdb-crawler/badges/gpa.svg)](https://codeclimate.com/github/tashrafy/node-imdb-crawler)
 
 ## Example
 ```
