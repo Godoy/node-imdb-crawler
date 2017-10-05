@@ -1,7 +1,9 @@
 # node-imdb-crawler
 A node library to gets TV Shows info from IMDB and returns collected data as a json.
 
-[![Code Climate](https://codeclimate.com/github/tashrafy/node-imdb-crawler/badges/gpa.svg)](https://codeclimate.com/github/tashrafy/node-imdb-crawler)
+[![Code Climate](https://codeclimate.com/github/Godoy/node-imdb-crawler/badges/gpa.svg)](https://codeclimate.com/github/Godoy/node-imdb-crawler)
+[![Test Coverage](https://codeclimate.com/github/Godoy/node-imdb-crawler/badges/coverage.svg)](https://codeclimate.com/github/Godoy/node-imdb-crawler/coverage)
+[![Issue Count](https://codeclimate.com/github/Godoy/node-imdb-crawler/badges/issue_count.svg)](https://codeclimate.com/github/Godoy/node-imdb-crawler)
 
 ## Example
 ```
