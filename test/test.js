@@ -3,8 +3,10 @@
 const expect = require('chai').expect
 const CrawlerImdb = require('../index')
 const imdbCode = 'tt0944947'
+const imdbCodeMovie = 'tt6788942'
 
 let imdbCrawler = new CrawlerImdb(imdbCode)
+let imdbCrawlerNoEps = new CrawlerImdb(imdbCodeMovie)
 
 describe('#getBasic', function () {
   this.timeout(10000)
@@ -32,5 +34,48 @@ describe('#getBasic', function () {
 
   it('should get genres', function () {
     expect(title.genres).to.eql(['Adventure', 'Drama', 'Fantasy', 'Romance'])
+  })
+})
+
+describe('#getEpisodes', function () {
+  this.timeout(10000)
+
+  let episodes = null
+  before(function (done) {
+    imdbCrawler.getEpisodes(imdbCode, function (data) {
+      episodes = data
+      done()
+    })
+  })
+
+  it('should get episode list', function () {
+    expect(episodes).to.be.an.instanceof(Array)
+  })
+
+  it('should get info for single episode', function () {
+    expect(episodes[0].name).to.have.string('Winter Is Coming')
+    expect(episodes[0].season).to.equal(1)
+    expect(episodes[0].epNum).to.equal(1)
+    expect(episodes[0].airDate).to.have.string('17 Apr. 2011')
+    expect(episodes[0].summary).to.have.string('Jon Arryn, the Hand of the King, is dead. King Robert Baratheon plans to ask his oldest friend, Eddard Stark, to take Jon\'s place. Across the sea, Viserys Targaryen plans to wed his sister to a nomadic warlord in exchange for an army.')
+    expect(episodes[0].image).to.have.string('http')
+    expect(episodes[0].image).to.match(/.(jpg|jpeg|png|gif)$/i)
+  })
+})
+
+describe('#getEpisodesForMovie', function () {
+  this.timeout(10000)
+
+  let episodes = null
+  before(function (done) {
+    imdbCrawlerNoEps.getEpisodes(imdbCodeMovie, function (data) {
+      episodes = data
+      done()
+    })
+  })
+
+  it('should return nothing if title has no episodes', function () {
+    expect(episodes).to.be.an.instanceof(Array)
+    expect(episodes).to.have.length(0)
   })
 })
