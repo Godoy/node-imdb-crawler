@@ -41,3 +41,6 @@ Include the relevant issue number, if applicable.
 ```sh
 npm test
 ```
+
+# License
+[MIT License](LICENSE) (c) 2017 Adriano Godoy
