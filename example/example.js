@@ -1,10 +1,10 @@
 // var imdb_crawler = require('../index');
-const CrawlerImdb = require('../lib/node-imdb-crawler');
+const CrawlerImdb = require('../lib/node-imdb-crawler')
 
-let imdb_code = "tt0944947";
-let imdb_crawler = new CrawlerImdb(imdb_code);
+let imdbCode = 'tt0944947'
+let imdbCrawler = new CrawlerImdb(imdbCode)
 
-imdb_crawler.get_basic(function(data) {
-  console.log("Serie:");
-  console.log(data);
+imdbCrawler.getBasic(function (data) {
+  console.log('Serie:')
+  console.log(data)
 })
