@@ -4,7 +4,8 @@
   "description": "A node library to crawler imdb and parse to json",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --reporter spec"
+    "test": "mocha --reporter spec",
+    "lint": "./node_modules/.bin/eslint ."
   },
   "repository": {
     "type": "git",
