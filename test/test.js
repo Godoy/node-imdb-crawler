@@ -42,7 +42,7 @@ describe('#getEpisodes', function () {
 
   let episodes = null
   before(function (done) {
-    imdbCrawler.getEpisodes(imdbCode, function (data) {
+    imdbCrawler.getEpisodes(function (data) {
       episodes = data
       done()
     })
@@ -67,8 +67,9 @@ describe('#getEpisodesForMovie', function () {
   this.timeout(10000)
 
   let episodes = null
+
   before(function (done) {
-    imdbCrawlerNoEps.getEpisodes(imdbCodeMovie, function (data) {
+    imdbCrawlerNoEps.getEpisodes(function (data) {
       episodes = data
       done()
     })
