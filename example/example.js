@@ -7,4 +7,8 @@ let imdbCrawler = new CrawlerImdb(imdbCode)
 imdbCrawler.getBasic(function (data) {
   console.log('Serie:')
   console.log(data)
+
+  imdbCrawler.getEpisodes(imdbCode, function (data) {
+    console.log(data)
+  })
 })
