@@ -1,4 +1,3 @@
-// var imdb_crawler = require('../index');
 const CrawlerImdb = require('../lib/node-imdb-crawler')
 
 let imdbCode = 'tt0944947'
@@ -8,7 +7,7 @@ imdbCrawler.getBasic(function (data) {
   console.log('Serie:')
   console.log(data)
 
-  imdbCrawler.getEpisodes(imdbCode, function (data) {
+  imdbCrawler.getEpisodes(function (data) {
     console.log(data)
   })
 })
