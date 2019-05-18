@@ -1,6 +1,6 @@
 {
   "name": "node-imdb-crawler",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A node library to crawler imdb and parse to json",
   "main": "index.js",
   "scripts": {
