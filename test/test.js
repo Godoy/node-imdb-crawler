@@ -33,7 +33,7 @@ describe('#getBasic', function () {
   })
 
   it('should get genres', function () {
-    expect(title.genres).to.eql(['Adventure', 'Drama', 'Fantasy', 'Romance'])
+    expect(title.genres).to.eql(['Action', 'Adventure', 'Drama', 'Fantasy', 'Romance'])
   })
 })
 
@@ -56,8 +56,8 @@ describe('#getEpisodes', function () {
     expect(episodes[0].name).to.have.string('Winter Is Coming')
     expect(episodes[0].season).to.equal(1)
     expect(episodes[0].epNum).to.equal(1)
-    expect(episodes[0].airDate).to.have.string('17 Apr. 2011')
-    expect(episodes[0].summary).to.have.string('Jon Arryn, the Hand of the King, is dead. King Robert Baratheon plans to ask his oldest friend, Eddard Stark, to take Jon\'s place. Across the sea, Viserys Targaryen plans to wed his sister to a nomadic warlord in exchange for an army.')
+    expect(episodes[0].airDate).to.have.string('8 May 2011')
+    expect(episodes[0].summary).to.have.string('Eddard Stark is torn between his family and')
     expect(episodes[0].image).to.have.string('http')
     expect(episodes[0].image).to.match(/.(jpg|jpeg|png|gif)$/i)
   })
